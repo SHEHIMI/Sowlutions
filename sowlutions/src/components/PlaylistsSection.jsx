@@ -151,7 +151,7 @@ const PlaylistsSection = () => {
         </button>
       </div>
 
-      {/* Playlists grid */}
+      {/* Playlists */}
       <div className="mx-auto mt-8 max-w-7xl px-6">
         {isLoading && (
           <p className="py-12 text-center text-sm text-gray-500">Loading playlists...</p>

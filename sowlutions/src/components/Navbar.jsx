@@ -148,7 +148,7 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Mobile: hamburger (center-ish) */}
+          {/* Hamburger for Mobile */}
           <div className="flex flex-1 justify-center md:hidden">
             <button
               type="button"
@@ -159,8 +159,6 @@ const Navbar = () => {
               <Bars3Icon className="h-7 w-7 text-white" />
             </button>
           </div>
-
-          {/* Desktop: Upgrade Plan + Search */}
           <div
             className="ml-6 hidden items-center gap-4 md:flex"
             ref={searchRef}
@@ -274,7 +272,6 @@ const Navbar = () => {
               </button>
               {isProfileOpen && (
                 <div className="absolute right-0 top-full z-50 mt-2 w-64 overflow-hidden rounded-2xl border border-white/10 bg-[#141420] shadow-2xl">
-                  {/* Avatar + Name */}
                   <div className="flex items-center gap-3 px-5 py-5">
                     <span className="text-base font-semibold text-white">
                       Mo Shehimi
@@ -332,7 +329,6 @@ const Navbar = () => {
               Menu
             </h2>
           </div>
-
           {/* Search */}
           <div className="mx-5 mt-6">
             <div className="flex items-center rounded-lg border border-white/20 bg-transparent px-4 py-3">

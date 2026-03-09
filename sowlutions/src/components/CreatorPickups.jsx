@@ -2,12 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { PlayIcon } from "@heroicons/react/24/solid";
 import thematicClient, { getProjectId } from "../services/api/thematicClient";
-
-
-const formatViewCount = (n) => {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, "")}M views`;
-  return `${n.toLocaleString()} views`;
-};
+import { formatViewCount } from "../utils/utils";
 
 const RecentPickups = () => {
   const [pickups, setPickups] = useState([]);
@@ -110,7 +105,6 @@ const RecentPickups = () => {
                       {creatorName.charAt(0)}
                     </div>
                   )}
-
                   <div className="min-w-0 flex-1">
                     <p className="line-clamp-2 text-sm font-bold text-gray-900">
                       {pickup.video_title}
